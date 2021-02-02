@@ -1,12 +1,12 @@
 // página del home, se importarán los componentes internos
 import React from 'react';
-import Componente from '../components/component';
+import FeaturedVideo from '../../components/FeaturedVideo/Default';
 
 const Page = () => {
     return (
         <>
         <div className="page">
-            <Componente />
+            <FeaturedVideo />
         </div>
         <style jsx="true">
             {`
