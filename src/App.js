@@ -1,13 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import useUrlVideos from './api/UrlVideos/useUrlVideos';
+import Loading from './components/Loading/default';
+import VideosMasVistos from './pages/VideosMasVistos/default';
+// import { Layout } from './components/Layout';
 
-function App() {
+const App = () => {
+  const { notice, isLoading, isError } = useUrlVideos();
+
+  if (isLoading) return <Loading />;
+  if (isError) return <div>Lo sentimos, no hay información disponible.</div>;
   return (
-    <div className="App">
-      <header className="App-header">
-        Videos LR
-      </header>
-    </div>
+    <Router>
+      {/* <Layout> */}
+      <Switch>
+        <Route exact path="/">
+          <VideosMasVistos info={notice} />
+        </Route>
+        <Route path="/:id">{/* <PageDetailsNotice info={notice} /> */}</Route>
+      </Switch>
+      {/* </Layout> */}
+    </Router>
   );
-}
+};
 
 export default App;
