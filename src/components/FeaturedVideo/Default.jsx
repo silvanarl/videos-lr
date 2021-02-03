@@ -13,7 +13,7 @@ const FeaturedVideo = () => {
 
     return (
         <>
-        <section className="container featured">
+        <section className=" featured">
             <div className='featured-wrapper'>
                 <ReactPlayer
                     url="https://youtu.be/yKf9aUIxdb4"
@@ -35,6 +35,7 @@ const FeaturedVideo = () => {
                     <div className="featured-footer-date">
                         {`${currentDay} de ${currentMonthFinal} de ${currentYear}`}
                     </div>
+                    <div className="separater"></div>
                     <div className="featured-footer-content">
                         Compartir: 
                         <div className="featured-footer-media">
@@ -55,11 +56,11 @@ const FeaturedVideo = () => {
         </section>
             <style jsx="true">
                 {`
-                .container {
+                // .container {
                     
-                    margin:auto;
-                    max-width: 1000px;
-                }
+                //     margin:auto;
+                //     max-width: 1000px;
+                // }
                 .featured{
                     display: flex;
                     color:#fff;
@@ -118,9 +119,10 @@ const FeaturedVideo = () => {
                   .featured-footer-media a {
                     margin: 0 .15rem;
                   }
-                  .featured-footer-date {
+                .separater{
                       border-right: 1px solid #fff;
                       padding-right: 5px;
+
                   }
                   .sprite-facebook {
                     background: url('/assets/sprite_mediashare.png');

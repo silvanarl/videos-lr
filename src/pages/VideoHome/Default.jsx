@@ -1,27 +1,25 @@
 // página del home, se importarán los componentes internos
 import React from 'react';
 import FeaturedVideo from '../../components/FeaturedVideo/Default';
-import RecommendenVideos from '../components/RecommendedVideos';
+import InfoVideo from '../../components/InfoVideo/Default';
+// import RecommendedVideos from '../../components/RecommendedVideos';
 
-const Page = () => {
+const Home = () => {
     return (
         <>
-        <div className="page">
+        <div className="container">
             <FeaturedVideo />
-            <RecommendenVideos />
+            <InfoVideo />
         </div>
         <style jsx="true">
             {`
-            // .page {
-            //     display: flex;
-            //     justifyContent: center;
-            // }
+            
             `}
         </style>
         </>
     )
 }
-export default Page;
+export default Home;
 
 
 

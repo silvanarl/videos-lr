@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import useUrlVideos from './api/UrlVideos/useUrlVideos';
 import Loading from './components/Loading/default';
 import VideosMasVistos from './pages/VideosMasVistos/default';
-// import { Layout } from './components/Layout';
+import Home from './pages/VideoHome/Default';
 
 const App = () => {
   const { notice, isLoading, isError } = useUrlVideos();
@@ -14,6 +14,9 @@ const App = () => {
     <Router>
       {/* <Layout> */}
       <Switch>
+        <Route exact path="/home">
+          <Home />
+        </Route>
         <Route exact path="/">
           <VideosMasVistos info={notice} />
         </Route>

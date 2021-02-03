@@ -9,9 +9,6 @@ const RecommendenVideos = () => {
       </div>
       <style jsx="true">
         {`
-          .container {
-            background-color: salmon;
-          }
         `}
       </style>
     </div>
