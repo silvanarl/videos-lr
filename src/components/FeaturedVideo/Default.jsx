@@ -86,6 +86,7 @@ const FeaturedVideo = () => {
                   }
                   .featured-footer{
                     display:flex;
+                    justify-content: space-around;
                     border-top: 1px solid #fff;
                     border-bottom: 1px solid #fff;
                     padding: 5px 0;
