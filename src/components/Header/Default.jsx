@@ -1,16 +1,7 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const currentDay = new Date().getDay();
-    let currentMonthFinal;
-    const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-    if (!isNaN(currentMonth) && currentMonth >= 1 && currentMonth <= 12) {
-        currentMonthFinal = months[currentMonth];
-    }
 
     return (
         <>

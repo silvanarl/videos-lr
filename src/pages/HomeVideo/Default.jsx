@@ -2,12 +2,14 @@
 import React from 'react';
 import FeaturedVideo from '../../components/FeaturedVideo/Default';
 import InfoVideo from '../../components/InfoVideo/Default';
+import Header from '../../components/Header/Default';
 // import RecommendedVideos from '../../components/RecommendedVideos';
 
 const Home = () => {
     return (
         <>
         <div className="container">
+            <Header />
             <FeaturedVideo />
             <InfoVideo />
         </div>
