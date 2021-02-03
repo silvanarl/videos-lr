@@ -10,6 +10,7 @@ const Home = () => {
         <div className="container">
             <FeaturedVideo />
             <InfoVideo />
+            {/* <RecommendedVideos /> */}
         </div>
         <style jsx="true">
             {`

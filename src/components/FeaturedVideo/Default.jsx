@@ -21,9 +21,7 @@ const FeaturedVideo = () => {
                     controls
                     width="100%"
                     heigth="100%"
-                >    
-                </ReactPlayer> 
-
+                />    
             </div>
             <div className="featured-wrapper-info">
                 <div className="featured-info">
@@ -56,11 +54,6 @@ const FeaturedVideo = () => {
         </section>
             <style jsx="true">
                 {`
-                // .container {
-                    
-                //     margin:auto;
-                //     max-width: 1000px;
-                // }
                 .featured{
                     display: flex;
                     color:#fff;
@@ -84,7 +77,9 @@ const FeaturedVideo = () => {
                 }
                 .featured-wrapper {
                     position: relative;
-                   padding-top: 380px;
+                    padding-top: 52.6%;
+                    overflow: hidden;
+                    height: 0;
                 }
                 .react-player {
                     position: absolute;
