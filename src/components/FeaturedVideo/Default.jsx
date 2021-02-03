@@ -13,7 +13,7 @@ const FeaturedVideo = () => {
 
     return (
         <>
-        <section className="featured">
+        <section className="container featured">
             <div className='featured-wrapper'>
                 <ReactPlayer
                     url="https://youtu.be/yKf9aUIxdb4"
@@ -55,16 +55,31 @@ const FeaturedVideo = () => {
         </section>
             <style jsx="true">
                 {`
-                .featured{
-                    max-width: 1000px;
+                .container {
+                    
                     margin:auto;
-                    background-color: #252525;
+                    max-width: 1000px;
+                }
+                .featured{
                     display: flex;
                     color:#fff;
                     padding: 1.5rem;
                     justify-content: center;
                     flex-direction: column;
                     box-sizing: border-box;
+                    position: relative;
+                }
+                .featured:before {
+                    content: '';
+                    background-color: #252525;
+                    display: block;
+                    position: absolute;
+                    height: 100%;
+                    width: 100vw;
+                    z-index: -1;
+                    top: 0;
+                    margin-left: -50vw;
+                    left: 50%;
                 }
                 .featured-wrapper {
                     position: relative;

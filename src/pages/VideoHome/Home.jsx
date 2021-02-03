@@ -10,10 +10,10 @@ const Page = () => {
         </div>
         <style jsx="true">
             {`
-            .page {
-                display: flex;
-                justifyContent: center;
-            }
+            // .page {
+            //     display: flex;
+            //     justifyContent: center;
+            // }
             `}
         </style>
         </>
