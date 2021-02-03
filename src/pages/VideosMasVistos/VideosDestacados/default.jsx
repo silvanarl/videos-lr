@@ -21,19 +21,22 @@ const VideosDestacados = ({ notice }) => {
       <style jsx="true">
         {`
           .content-notice {
-            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            align-items: flex-start;
+            max-height: 400px;
           }
           .content-notice__videos {
-            margin: 0 auto;
-            width: 80vw !important;
-            height: 160px !important;
+            width: 100% !important;
+            height: 75px !important;
           }
           .content-notice a {
             text-decoration: none;
             color: black;
           }
           .content-notice a h3 {
-            width: 80vw;
             margin: 15px auto 0;
             padding-bottom: 12px;
             border-bottom: 1px solid #d2d2d2;
@@ -43,10 +46,10 @@ const VideosDestacados = ({ notice }) => {
             font-weight: 700;
           }
           .content-notice__div {
+            width: 100%;
             display: flex;
             flex direction: row;
             justify-content: space-between;
-            // align-items: flex-start;
           }
           .content-notice__div h4 {
             align-self: flex-start;
@@ -66,12 +69,11 @@ const VideosDestacados = ({ notice }) => {
           }
           @media only screen and (min-width: 800px) {
            .content-notice__videos {
-            width: 40vw !important;
-            height: 190px !important;
-          }
+              height: 130px !important;
+            }
            .content-notice a p {
-            width: 40vw;   
-          }
+              width: 40vw;   
+           }
         `}
       </style>
     </div>
