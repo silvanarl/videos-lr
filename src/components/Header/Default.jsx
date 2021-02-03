@@ -17,34 +17,38 @@ const Header = () => {
             <header>
                 <ul className="header container">
                     <li className="header-item">
-                        <Link to="/">Noticias</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }} to="/">
+                            Noticias
+                        </Link>
                     </li>
                     <li className="header-item">
-                        <Link to="/home">Política</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }} to="/home">
+                            Política
+                        </Link>
                     </li>
                     <li className="header-item">
-                        <Link>Sociedad</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Sociedad</Link>
                     </li>
                     <li className="header-item">
-                        <Link>Mundo</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Mundo</Link>
                     </li>
                     <li className="header-item">
-                        <Link>Turismo</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Turismo</Link>
                     </li>
                     <li className="header-item">
-                        <Link>Recetas</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Recetas</Link>
                     </li>
                     <li className="header-item">
-                        <Link>Videojuego</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Videojuego</Link>
                     </li>
                     <li className="header-item">
-                        <Link>Tecnología</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Tecnología</Link>
                     </li>
                     <li className="header-item">
-                        <Link>Espectáculos</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Espectáculos</Link>
                     </li>
                     <li className="header-item">
-                        <Link>Cine y Series</Link>
+                        <Link activeStyle={{ fontWeight: "bold" }}>Cine y Series</Link>
                     </li>
                 </ul>
             </header>
@@ -63,7 +67,7 @@ const Header = () => {
                     position: relative;
                 }
                 .header::-webkit-scrollbar {
-                    width: 4px; /* width of the entire scrollbar */
+                    display: none;
                 }
 
                 .header::-webkit-scrollbar-track {
@@ -71,7 +75,7 @@ const Header = () => {
                 }
 
                 .header::-webkit-scrollbar-thumb {
-                    background-color: #333; /* color of the scroll thumb */
+                    background-color: #000; /* color of the scroll thumb */
                 }
                 header:before {
                     width: 100vw;
