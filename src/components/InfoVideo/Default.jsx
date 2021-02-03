@@ -3,7 +3,7 @@ import React from 'react';
 const InfoVideo = () => {
     return (
         <>
-        <main className="">
+        <main className="info-main">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aspernatur, voluptatibus nesciunt debitis, fuga ex inventore hic quisquam est eum deleniti, quos veniam ipsam quod! Dolores delectus quae blanditiis vero?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur, voluptatum maxime explicabo ut deleniti, vel sint exercitationem corporis magnam voluptas blanditiis atque et quasi culpa laudantium facere minus cupiditate a alias fugiat mollitia dolorem repellat. Odit pariatur autem, odio vel, iure ea eaque esse, qui provident eveniet molestiae aliquam!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga unde assumenda necessitatibus nemo veritatis eligendi, omnis mollitia? Alias modi cumque doloribus magni laudantium enim laboriosam eius explicabo perferendis libero!</p>
@@ -11,6 +11,13 @@ const InfoVideo = () => {
         </main>
         <style jsx="true">
             {`
+            .info-main{
+                padding: 1rem;
+            }
+            // @media only screen and (min-width: 767px) {
+            // .info-main{
+            //     }
+            // }
             `}
         </style>
         </>

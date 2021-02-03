@@ -2,6 +2,7 @@ import React from 'react';
 import VideosDestacados from './VideosDestacados/default';
 
 const VideosMasVistos = ({ info }) => {
+  console.log('info', info)
   return (
     <div className="content-page-notice">
       {info.map((notice, index) => {

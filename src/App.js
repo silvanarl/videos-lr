@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import useUrlVideos from './api/UrlVideos/useUrlVideos';
 import Loading from './components/Loading/default';
 import VideosMasVistos from './pages/VideosMasVistos/default';
-import Home from './pages/VideoHome/Default';
+import Home from './pages/HomeVideo/Default';
 
 const App = () => {
   const { notice, isLoading, isError } = useUrlVideos();
