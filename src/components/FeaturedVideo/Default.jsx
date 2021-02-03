@@ -13,7 +13,7 @@ const FeaturedVideo = () => {
 
     return (
         <>
-        <section className=" featured">
+        <section className="featured">
             <div className='featured-wrapper'>
                 <ReactPlayer
                     url="https://youtu.be/yKf9aUIxdb4"
@@ -64,7 +64,7 @@ const FeaturedVideo = () => {
                 .featured{
                     display: flex;
                     color:#fff;
-                    padding: 1.5rem;
+                    padding: 1rem;
                     justify-content: center;
                     flex-direction: column;
                     box-sizing: border-box;
