@@ -1,45 +1,60 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-
     return (
         <>
             <header>
                 <ul className="header container">
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }} to="/">
+                        <NavLink activeClassName="active" exact to="/">
                             Noticias
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }} to="/home">
+                        <NavLink activeClassName="active" exact to="/home">
                             Política
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Sociedad</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Sociedad
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Mundo</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Mundo
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Turismo</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Turismo
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Recetas</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Recetas
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Videojuego</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Videojuego
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Tecnología</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Tecnología
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Espectáculos</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Espectáculos
+                        </NavLink>
                     </li>
                     <li className="header-item">
-                        <Link activeStyle={{ fontWeight: "bold" }}>Cine y Series</Link>
+                        <NavLink exact to="/" activeClassName="active">
+                            Cine y Series
+                        </NavLink>
                     </li>
                 </ul>
             </header>
@@ -87,6 +102,9 @@ const Header = () => {
                     font-size: 12px;
                     color: #fff;
                     text-decoration: none;
+                }
+                .header-item a.active {
+                    font-weight: bold;
                 }
             `}</style>
         </>
