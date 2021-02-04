@@ -1,17 +1,17 @@
 import React from 'react';
 import VideosDestacados from './VideosDestacados/default';
 
-const VideosMasVistos = ({ info }) => {
+const VideosMasVistos = ({ info, title }) => {
   console.log('info', info)
   return (
     <>
       <section className="main-content">
         <header className="main-header">
-          <h2>Te Recomendamos</h2>
+          <h2>{title}</h2>
         </header>
         <div className="content-page-notice">
           {info.map((notice, index) => {
-            if (index < 4) return <VideosDestacados key={index} notice={notice} />;
+            if (index < 8) return <VideosDestacados key={index} notice={notice} />;
           })}
         </div>
       </section>
@@ -26,7 +26,8 @@ const VideosMasVistos = ({ info }) => {
             line-height: 26px;
             font-weight: 700;
           }
-          .main-header h2::::before {
+          
+          .main-header h2:before {
             content: '';
             display: block;
             width: 4px;

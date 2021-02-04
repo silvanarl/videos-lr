@@ -5,6 +5,7 @@ import Loading from "./components/Loading/default";
 import VideosMasVistos from "./pages/VideosMasVistos/default";
 import Home from "./pages/HomeVideo/Default";
 import Header from "./components/Header/Default";
+import InternaVideo from "./pages/InternaVideo/Default";
 
 const App = () => {
     const { notice, isLoading, isError } = useUrlVideos();
@@ -16,11 +17,11 @@ const App = () => {
             <Router>
                 <Header />
                 <Switch>
-                    <Route exact path="/home">
-                        <Home />
+                    <Route exact path="/interna">
+                        <InternaVideo info={notice}  />
                     </Route>
                     <Route exact path="/">
-                        <VideosMasVistos info={notice} />
+                        <Home info={notice}  />
                     </Route>
                     <Route path="/:id">{/* <PageDetailsNotice info={notice} /> */}</Route>
                 </Switch>

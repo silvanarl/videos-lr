@@ -4,7 +4,11 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <header>
+            <header className="header">
+                <div className="header-title">
+                    {/* La República | Videos */}
+                    <img src="https://cdn.larepublica.pe/images/content/default/logo-lr.svg" alt=""/>
+                    </div>
                 <ul className="header container">
                     <li className="header-item">
                         <NavLink activeClassName="active" exact to="/">
@@ -59,6 +63,15 @@ const Header = () => {
                 </ul>
             </header>
             <style jsx="true">{`
+                .header-title{
+                    display: flex;
+                    background-color: red;
+                    color: #fff;
+                    height: 75px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
                 .header {
                     margin: 0 auto;
                     padding: 0;
@@ -69,7 +82,7 @@ const Header = () => {
                     text-align: center;
                     white-space: nowrap;
                 }
-                header {
+                .header {
                     position: relative;
                 }
                 .header::-webkit-scrollbar {
@@ -83,7 +96,7 @@ const Header = () => {
                 .header::-webkit-scrollbar-thumb {
                     background-color: #000; /* color of the scroll thumb */
                 }
-                header:before {
+                .header:before {
                     width: 100vw;
                     position: absolute;
                     top: 0;
@@ -96,7 +109,7 @@ const Header = () => {
                 }
                 .header-item {
                     display: inline-block;
-                    padding: 15px 13px;
+                    padding: 8px 13px;
                 }
                 .header-item a {
                     font-size: 12px;

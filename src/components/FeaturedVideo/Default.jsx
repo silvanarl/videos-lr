@@ -27,7 +27,7 @@ const FeaturedVideo = () => {
                 <div className="featured-info">
                     <span>Tecnología</span>
                     <h1>Los Sudokus resurgen: los momentos '¡eureka!' de vídeos que los resuelven son la nueva sensación de YouTube</h1>
-                    <p className="bodyTitleSingle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error voluptate, suscipit voluptas sequi totam beatae similique delectus commodi, reprehenderit necessitatibus molestiae nesciunt? Aperiam earum vitae asperiores possimus ad dolores.</p>
+                    <p className="bodyTitleSingle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error voluptate, suscipit voluptas sequi totam beatae similique delectus </p>
                 </div>
                 <div className="featured-footer">
                     <div className="featured-footer-date">
